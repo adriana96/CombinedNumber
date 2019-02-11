@@ -1,0 +1,16 @@
+#pragma once
+<<<<<<< HEAD
+#include<iostream>
+#include<list>
+#include<string>
+#include<sstream>
+=======
+#include <string>
+#include <list>
+>>>>>>> 9b82238e226c6c7554c094e9b73794a004483f02
+
+class CombinedNumber
+{
+public:
+    std::string constructGreatestNumber(std::list<unsigned int> l);
+};

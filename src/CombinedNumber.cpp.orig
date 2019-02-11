@@ -1,13 +1,16 @@
 #include "CombinedNumber.hpp"
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b82238e226c6c7554c094e9b73794a004483f02
 std::string CombinedNumber::constructGreatestNumber(std::list<unsigned int> l)
 {
     if (l.empty())
         return "";
+<<<<<<< HEAD
     std::stringstream ss;
     std::string s;
-    l.sort(std::greater<int>());
     for (auto & it : l) {
         ss << std::to_string(it);
     }
@@ -15,4 +18,7 @@ std::string CombinedNumber::constructGreatestNumber(std::list<unsigned int> l)
     return s;
 
 
+=======
+    return std::to_string(l.front());
+>>>>>>> 9b82238e226c6c7554c094e9b73794a004483f02
 }

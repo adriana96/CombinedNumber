@@ -7,7 +7,11 @@ struct CombinedNumberTests : public ::testing::Test
     CombinedNumber cn;
 };
 
+<<<<<<< HEAD
 TEST_F(CombinedNumberTests, whenEmptyListIsGivenEmptyListShouldBeReturned)
+=======
+TEST_F(CombinedNumberTests, whenEmptyListIsGivenEmptyStringShouldBeReturned)
+>>>>>>> 9b82238e226c6c7554c094e9b73794a004483f02
 {
     auto result = cn.constructGreatestNumber({});
     ASSERT_EQ(result, "");
@@ -17,24 +21,13 @@ TEST_F(CombinedNumberTests, when1IsGivenString1IsReturned)
 {
     auto result = cn.constructGreatestNumber({1});
     ASSERT_EQ(result, "1");
+<<<<<<< HEAD
 }
 
 TEST_F(CombinedNumberTests, when1And1AreGivenString1And1IsReturned)
 {
     auto result = cn.constructGreatestNumber({1,1});
     ASSERT_EQ(result, "11");
+=======
+>>>>>>> 9b82238e226c6c7554c094e9b73794a004483f02
 }
-
-TEST_F(CombinedNumberTests, when2IsGivenString2IsReturned)
-{
-    auto result = cn.constructGreatestNumber({2});
-    ASSERT_EQ(result, "2");
-}
-
-
-TEST_F(CombinedNumberTests, when2DigitsAreGivenSortedStringIsReturned)
-{
-    auto result = cn.constructGreatestNumber({1,2});
-    ASSERT_EQ(result, "21");
-}
-
