@@ -18,3 +18,9 @@ TEST_F(CombinedNumberTests, when1IsGivenString1IsReturned)
     auto result = cn.constructGreatestNumber({1});
     ASSERT_EQ(result, "1");
 }
+
+TEST_F(CombinedNumberTests, when1And1AreGivenString1And1IsReturned)
+{
+    auto result = cn.constructGreatestNumber({1,1});
+    ASSERT_EQ(result, "11");
+}
