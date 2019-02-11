@@ -1,0 +1,29 @@
+[33mcommit e1b9d00df3993f0963c0ed1b952c2efe06502562[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Adriana <agrzesiuk.7@gmail.com>
+Date:   Mon Feb 11 17:58:52 2019 +0100
+
+    3rd test
+
+[33mcommit 87ab7a0003b7ffa084c119a393c0b024703b2159[m
+Author: Adriana <agrzesiuk.7@gmail.com>
+Date:   Mon Feb 11 17:35:22 2019 +0100
+
+    First 2 tests
+
+[33mcommit e49c452c7c51b2a31aa6dc3506e767dd0fc81cba[m
+Author: Łukasz Ziobroń <lukin1000@gmail.com>
+Date:   Wed Jan 9 11:21:44 2019 +0100
+
+    Update README.md
+
+[33mcommit 3030c1a7a14b528c4096b78dd6aab7959113f471[m
+Author: Lukasz Ziobron <lukin1000@gmail.com>
+Date:   Wed Aug 8 01:18:24 2018 +0200
+
+    gmock deleted, readme fixed
+
+[33mcommit 08c5858bd17a95d68aeb004088bfdefd11b65a88[m
+Author: Lukasz Ziobron <lukin1000@gmail.com>
+Date:   Wed Aug 8 01:03:00 2018 +0200
+
+    Project with Google Test - skeleton
