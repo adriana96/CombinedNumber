@@ -43,3 +43,10 @@ TEST_F(CombinedNumberTests, when2NumbersAreGivenSortedStringIsReturned)
     ASSERT_EQ(result, "321");
 }
 
+TEST_F(CombinedNumberTests, when3NumbersAreGivenSortedStringIsReturned)
+{
+    auto result = cn.constructGreatestNumber({21,3,50});
+    ASSERT_EQ(result, "50321");
+}
+
+
