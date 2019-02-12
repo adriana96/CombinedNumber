@@ -31,10 +31,15 @@ TEST_F(CombinedNumberTests, when2IsGivenString2IsReturned)
     ASSERT_EQ(result, "2");
 }
 
-
 TEST_F(CombinedNumberTests, when2DigitsAreGivenSortedStringIsReturned)
 {
     auto result = cn.constructGreatestNumber({1,2});
     ASSERT_EQ(result, "21");
+}
+
+TEST_F(CombinedNumberTests, when2NumbersAreGivenSortedStringIsReturned)
+{
+    auto result = cn.constructGreatestNumber({21,3});
+    ASSERT_EQ(result, "321");
 }
 

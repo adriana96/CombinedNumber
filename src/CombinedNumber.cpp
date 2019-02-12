@@ -5,14 +5,18 @@ std::string CombinedNumber::constructGreatestNumber(std::list<unsigned int> l)
 {
     if (l.empty())
         return "";
-    std::stringstream ss;
-    std::string s;
-    l.sort(std::greater<int>());
-    for (auto & it : l) {
-        ss << std::to_string(it);
-    }
-    s = ss.str();
-    return s;
-
+    std::vector<std::string> vs(l.size());
+    std::transform(l.begin(), l.end(), vs.begin(), [](const auto & number) {
+        return std::to_string(number);
+    });
+    if(l.size() == 1)
+        return vs.at(0);
+    auto me = std::max_element(vs.begin(), vs.end(), [] (const auto & a, const auto & b) {
+    return a[0] < b[0];
+    });
+    auto value = *me;
+    vs.erase(me);
+    value += vs[0];
+    return value;
 
 }
