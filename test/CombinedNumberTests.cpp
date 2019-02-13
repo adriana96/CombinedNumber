@@ -49,4 +49,15 @@ TEST_F(CombinedNumberTests, when3NumbersAreGivenSortedStringIsReturned)
     ASSERT_EQ(result, "50321");
 }
 
+TEST_F(CombinedNumberTests, when2NumbersWIthTheSameBeginningAreGivenOrderedStringIsReturned)
+{
+    auto result = cn.constructGreatestNumber({21,2});
+    ASSERT_EQ(result, "221");
+}
+
+TEST_F(CombinedNumberTests, when3NumbersWIthTheSameBeginningAreGivenOrderedStringIsReturned)
+{
+    auto result = cn.constructGreatestNumber({21,2,341});
+    ASSERT_EQ(result, "341221");
+}
 
